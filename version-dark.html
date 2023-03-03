@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coming Soon Kit includes 50+ unique coming soon page templates for building an audience before launching products.">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
+  <title>Coming Soon Kit | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900 selection:bg-sky-800 selection:text-slate-50 dark:selection:bg-sky-300 dark:selection:text-slate-800 min-h-screen">
+  <header class="py-3 md:py-6">
+    <div class="max-w-7xl mx-auto px-4 2xl:px-0 flex items-center justify-between">
+      <div class="flex items-center gap-x-12">
+        <a href="/" title="Homepage">
+          <svg class="text-sky-800 dark:text-sky-300 h-9 md:h-10 lg:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="currentColor" ></circle>
+          </svg> </a>
+        <nav class="hidden lg:flex items-center lg:gap-x-6">
+          <a href="#" title="About Us" class="font-semibold text-lg hover:opacity-90 transition-all text-sky-900 dark:text-sky-50" title="About Us">About Us</a> <a href="#" title="Product" class="font-semibold text-lg hover:opacity-90 transition-all text-slate-500 dark:text-slate-400" title="Product">Product</a> <a href="#" title="Features" class="font-semibold text-lg hover:opacity-90 transition-all text-slate-500 dark:text-slate-400" title="Features">Features</a> <a href="#" title="External link" class="font-semibold text-lg hover:opacity-90 transition-all flex items-center gap-x-1 text-slate-500 dark:text-slate-400" title="External link">External link
+            <svg class="h-6" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5 6H6.5C5.39543 6 4.5 6.89543 4.5 8V18C4.5 19.1046 5.39543 20 6.5 20H16.5C17.6046 20 18.5 19.1046 18.5 18V14M14.5 4H20.5M20.5 4V10M20.5 4L10.5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+            </svg></a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <div class="hidden sm:flex items-center gap-x-2">
+          <a href="#" target="_blank" title="App Store" class="font-semibold flex items-center gap-x-2.5 justify-center whitespace-nowrap transition-all hover:opacity-95 border-2 border-solid border-sky-800 dark:border-sky-300 text-sky-800 dark:text-sky-300 rounded-full py-2.5 px-6">
+            <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.9971 6.01222C21.2617 6.33807 20.4718 6.55825 19.6413 6.65777C20.4885 6.15049 21.1384 5.34553 21.4449 4.38733C20.6523 4.85762 19.7742 5.19933 18.8398 5.38252C18.0912 4.58637 17.0256 4.08789 15.8455 4.08789C13.5803 4.08789 11.7432 5.92503 11.7432 8.19194C11.7432 8.51252 11.7801 8.82428 11.8488 9.12548C8.4379 8.95375 5.41623 7.32005 3.39238 4.83825C3.0401 5.44593 2.83754 6.15049 2.83754 6.90084C2.83754 8.32405 3.56236 9.5808 4.66235 10.3162C3.9895 10.2942 3.35716 10.1101 2.80408 9.80274V9.85558C2.80408 11.8433 4.2176 13.5017 6.09525 13.8786C5.75001 13.972 5.38804 14.0213 5.01463 14.0213C4.75042 14.0213 4.49238 13.9966 4.24226 13.9491C4.76451 15.5784 6.27931 16.7655 8.07505 16.7972C6.67034 17.8981 4.90102 18.5542 2.97934 18.5542C2.64819 18.5542 2.32145 18.5349 2 18.497C3.816 19.6622 5.97195 20.3403 8.28818 20.3403C15.8358 20.3403 19.9618 14.0891 19.9618 8.66752C19.9618 8.49138 19.9574 8.31348 19.9495 8.13734C20.7509 7.55784 21.4467 6.83655 21.9954 6.01486L21.9971 6.01222Z" fill="currentColor" ></path>
+            </svg> Follow the journey
+          </a>
+          <a href="#" title="Join waitlist" class="font-semibold flex items-center justify-center whitespace-nowrap transition-all hover:opacity-95 text-slate-50 bg-sky-800 dark:text-slate-900 dark:bg-sky-300 rounded-full py-3 px-6" title="Join waitlist">Join waitlist</a> 
+        </div>
+        <div class="flex items-center lg:hidden group" :open="open" x-data="{ open: false }">
+          <button type="button" @click="open = true">
+            <svg class="h-10 w-10 text-gray-100" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="20" fill="currentColor" ></rect>
+              <path d="M12 14H28M12 20H28M12 26H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+            </svg> </button>
+          <section class="pt-3 py-6 shadow px-4 bg-slate-200 dark:bg-slate-900 absolute left-0 top-0 w-full hidden group-open:block z-20">
+            <div class="flex justify-between">
+              <figure>
+                <a href="/" title="Homepage">
+                  <svg class="text-sky-800 dark:text-sky-300 h-9 md:h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" ></circle>
+                  </svg> </a>
+              </figure>
+              <div class="flex items-center gap-x-4">
+                
+                <button type="button" aria-label="Menu button" @click="open = false">
+                  <svg class="text-slate-900 dark:text-slate-200 h-6 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.15152 5.15128C5.62015 4.68265 6.37995 4.68265 6.84858 5.15128L12 10.3027L17.1515 5.15128C17.6202 4.68265 18.3799 4.68265 18.8486 5.15128C19.3172 5.61991 19.3172 6.3797 18.8486 6.84833L13.6971 11.9998L18.8486 17.1513C19.3172 17.6199 19.3172 18.3797 18.8486 18.8483C18.3799 19.317 17.6202 19.317 17.1515 18.8483L12 13.6969L6.84858 18.8483C6.37995 19.317 5.62015 19.317 5.15152 18.8483C4.68289 18.3797 4.68289 17.6199 5.15152 17.1513L10.303 11.9998L5.15152 6.84833C4.68289 6.3797 4.68289 5.61991 5.15152 5.15128Z" fill="currentColor" ></path>
+                  </svg> </button>
+              </div>
+            </div>
+            <nav class="flex flex-col gap-y-2 pt-6 mt-6 border-t border-solid border-slate-50 dark:border-slate-700 mb-6">
+              <a href="#" title="About Us" class="font-medium text-slate-900 dark:text-slate-50 text-lg hover:opacity-90 transition-all">About Us</a>
+              <a href="#" title="Product" class="font-medium text-lg hover:opacity-90 transition-all text-slate-600 dark:text-slate-400">Product</a>
+              <a href="#" title="Features" class="font-medium text-lg hover:opacity-90 transition-all text-slate-600 dark:text-slate-400">Features</a>
+              <a href="#" title="External link" class="font-medium text-lg hover:opacity-90 transition-all flex items-center gap-x-1 text-slate-600 dark:text-slate-400">External
+                link
+                <svg class="h-6" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5 6H6.5C5.39543 6 4.5 6.89543 4.5 8V18C4.5 19.1046 5.39543 20 6.5 20H16.5C17.6046 20 18.5 19.1046 18.5 18V14M14.5 4H20.5M20.5 4V10M20.5 4L10.5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                </svg> </a>
+            </nav>
+            <div class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-2">
+              <a href="#" target="_blank" title="App Store" class="font-semibold flex items-center gap-x-2.5 justify-center whitespace-nowrap transition-all hover:opacity-95 border-2 border-solid border-sky-800 dark:border-sky-300 text-sky-800 dark:text-sky-300 rounded-full py-2.5 px-6">
+                <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.9971 6.01222C21.2617 6.33807 20.4718 6.55825 19.6413 6.65777C20.4885 6.15049 21.1384 5.34553 21.4449 4.38733C20.6523 4.85762 19.7742 5.19933 18.8398 5.38252C18.0912 4.58637 17.0256 4.08789 15.8455 4.08789C13.5803 4.08789 11.7432 5.92503 11.7432 8.19194C11.7432 8.51252 11.7801 8.82428 11.8488 9.12548C8.4379 8.95375 5.41623 7.32005 3.39238 4.83825C3.0401 5.44593 2.83754 6.15049 2.83754 6.90084C2.83754 8.32405 3.56236 9.5808 4.66235 10.3162C3.9895 10.2942 3.35716 10.1101 2.80408 9.80274V9.85558C2.80408 11.8433 4.2176 13.5017 6.09525 13.8786C5.75001 13.972 5.38804 14.0213 5.01463 14.0213C4.75042 14.0213 4.49238 13.9966 4.24226 13.9491C4.76451 15.5784 6.27931 16.7655 8.07505 16.7972C6.67034 17.8981 4.90102 18.5542 2.97934 18.5542C2.64819 18.5542 2.32145 18.5349 2 18.497C3.816 19.6622 5.97195 20.3403 8.28818 20.3403C15.8358 20.3403 19.9618 14.0891 19.9618 8.66752C19.9618 8.49138 19.9574 8.31348 19.9495 8.13734C20.7509 7.55784 21.4467 6.83655 21.9954 6.01486L21.9971 6.01222Z" fill="currentColor" ></path>
+                </svg> Follow the journey
+              </a>
+              <a href="#" title="Join waitlist" class="font-semibold flex items-center justify-center whitespace-nowrap transition-all hover:opacity-95 text-slate-50 bg-sky-800 dark:text-slate-900 dark:bg-sky-300 rounded-full py-3 px-6" title="Join waitlist">Join waitlist</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main role="main" class="overflow-x-hidden">
+    <section class="pt-8 md:pt-10 lg:pt-16 relative">
+      <div class="max-w-7xl mx-auto px-4 2xl:px-0 flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center gap-y-6 lg:w-10/12 mb-9 md:mb-12">
+          <span class="font-semibold text-sm md:text-base rounded-full inline-block py-1 px-2 md:py-2 md:px-4 bg-slate-300 dark:bg-slate-700 text-sky-700 dark:text-sky-50">20%
+            off with coupon “PHUNT20”</span>
+          <div class="font-semibold md:text-lg lg:text-xl text-cyan-800 dark:text-sky-300">The only tool
+            you need to buy for becoming a better designer</div>
+          <h1 class="font-bold text-4xl md:text-5xl lg:text-7xl text-cyan-900 dark:text-sky-50">Level up
+            your development skills with quick studies every weekends</h1>
+          <p class="font-medium text-sm md:text-lg lg:text-xl leading-normal text-slate-600 dark:text-slate-400">
+            We will send new case studies every week to your email box for you to level up and learn new
+            things that will improve your skills unbelievably fast.
+          </p>
+        </div>
+        <div class="self-stretch sm:self-center grid grid-cols-2 gap-x-4 mb-6">
+          <a href="#" title="Join waitlist" class="font-semibold flex items-center justify-center whitespace-nowrap transition-all hover:opacity-95 md:text-xl lg:text-2xl border-2 solid border-cyan-900 dark:border-sky-300 dark:bg-transparent text-cyan-900 dark:text-sky-300 rounded-full py-2 px-4 md:py-3.5 md:px-8" title="Join waitlist">Join waitlist</a> <a href="#" title="Join waitlist" class="font-semibold flex items-center justify-center whitespace-nowrap transition-all hover:opacity-95 md:text-xl lg:text-2xl bg-cyan-900 dark:bg-sky-300 text-slate-100 dark:text-slate-900 border-2 border-solid border-transparent rounded-full py-2 px-4 md:py-3.5 md:px-8" title="Join waitlist">Join waitlist</a>
+        </div>
+        <div class="self-start flex flex-col gap-y-4 md:gap-y-4 gap-x-4 bg-slate-300 dark:bg-slate-700 p-3 rounded-lg sm:w-60">
+          <div class="flex -space-x-3">
+            <figure class="bg-red-400 border-2 border-solid border-gray-50 rounded-full flex items-center justify-center w-8 h-8">
+              <img src="img/avatar-girl.png" class="h-5" >
+            </figure>
+            <figure class="bg-blue-400 border-2 border-solid border-gray-50  rounded-full flex items-center justify-center w-8 h-8">
+              <img src="img/avatar-man.png" class="h-5" >
+            </figure>
+            <figure class="bg-orange-400 border-2 border-solid border-gray-50 rounded-full flex items-center justify-center w-8 h-8">
+              <img src="img/avatar-girl.png" class="h-5" >
+            </figure>
+            <figure class="bg-emerald-400 border-2 border-solid border-gray-50  rounded-full flex items-center justify-center w-8 h-8">
+              <img src="img/avatar-man.png" class="h-5" >
+            </figure>
+            <figure class="bg-violet-400 border-2 border-solid border-gray-50 rounded-full flex items-center justify-center w-8 h-8">
+              <img src="img/avatar-girl.png" class="h-5" >
+            </figure>
+          </div>
+          <p class="text-sm text-left text-slate-900 dark:text-slate-50">
+            Join with <mark class="font-extrabold bg-transparent text-slate-900 dark:text-slate-50 inline-block">4600+
+              Subscribers</mark> and start getting feedback
+          </p>
+        </div>
+      </div>
+      <div class="absolute h-full w-full top-0 left-0 -z-20 overflow-hidden pointer-events-none">
+        <figure>
+          <img src="img/general-2-pattern.svg" alt="Pattern" class="hidden lg:block dark:hidden absolute top-0 right-1/2 transform translate-x-1/2">
+          <img src="img/general-2-pattern-dark.svg" alt="Pattern" class="hidden dark:lg:block absolute top-0 right-1/2 transform translate-x-1/2">
+          <img src="img/general-2-pattern-mini.svg" alt="Pattern" class="lg:hidden dark:hidden absolute top-0 right-1/2 transform translate-x-1/2">
+          <img src="img/general-2-pattern-mini-dark.svg" alt="Pattern" class="hidden dark:block dark:lg:hidden absolute top-0 right-1/2 transform translate-x-1/2">
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="py-6">
+    <div class="max-w-7xl mx-auto px-4 2xl:px-0 flex flex-col gap-y-6 md:gap-y-0 md:flex-row md:items-center md:justify-between"><span class="font-bold text-sm text-neutral-500 dark:text-zinc-500">Made with love</span>
+      <div class="font-medium lg:text-sm text-neutral-500 dark:text-zinc-500 hover:opacity-90 transition-all flex flex-col sm:flex-row sm:items-center gap-y-1 sm:gap-y-0 sm:gap-x-6">
+        <a href="#" title="Terms of Service">Terms of Service</a>
+        <a href="#" title="Product">Product</a>
+        <a href="#" title="Features">Features</a>
+        <a href="#" title="External Link" class="flex items-center gap-x-1">External Link
+          <svg class="h-4" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 6H6.5C5.39543 6 4.5 6.89543 4.5 8V18C4.5 19.1046 5.39543 20 6.5 20H16.5C17.6046 20 18.5 19.1046 18.5 18V14M14.5 4H20.5M20.5 4V10M20.5 4L10.5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+          </svg> </a>
+      </div>
+      <div class="flex gap-x-2">
+        <a href="#" title="Twitter Profile" target="_blank" class="bg-slate-800 dark:bg-zinc-800 p-2 rounded-full">
+          <svg class="h-4 text-slate-50 dark:text-gray-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.9971 6.01222C21.2617 6.33807 20.4718 6.55825 19.6413 6.65777C20.4885 6.15049 21.1384 5.34553 21.4449 4.38733C20.6523 4.85762 19.7742 5.19933 18.8398 5.38252C18.0912 4.58637 17.0256 4.08789 15.8455 4.08789C13.5803 4.08789 11.7432 5.92503 11.7432 8.19194C11.7432 8.51252 11.7801 8.82428 11.8488 9.12548C8.4379 8.95375 5.41623 7.32005 3.39238 4.83825C3.0401 5.44593 2.83754 6.15049 2.83754 6.90084C2.83754 8.32405 3.56236 9.5808 4.66235 10.3162C3.9895 10.2942 3.35716 10.1101 2.80408 9.80274V9.85558C2.80408 11.8433 4.2176 13.5017 6.09525 13.8786C5.75001 13.972 5.38804 14.0213 5.01463 14.0213C4.75042 14.0213 4.49238 13.9966 4.24226 13.9491C4.76451 15.5784 6.27931 16.7655 8.07505 16.7972C6.67034 17.8981 4.90102 18.5542 2.97934 18.5542C2.64819 18.5542 2.32145 18.5349 2 18.497C3.816 19.6622 5.97195 20.3403 8.28818 20.3403C15.8358 20.3403 19.9618 14.0891 19.9618 8.66752C19.9618 8.49138 19.9574 8.31348 19.9495 8.13734C20.7509 7.55784 21.4467 6.83655 21.9954 6.01486L21.9971 6.01222Z" fill="currentColor" ></path>
+          </svg> </a>
+        <a href="#" title="Facebook Profile" target="_blank" class="bg-slate-800 dark:bg-zinc-800 p-2 rounded-full">
+          <svg class="h-4 text-slate-50 dark:text-gray-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.0134 1.1626H3.78378C2.94059 1.1626 2.13192 1.49756 1.53569 2.09379C0.939452 2.69003 0.604492 3.49869 0.604492 4.34189V20.5715C0.604492 21.4148 0.939452 22.2234 1.53569 22.8196C2.13192 23.4158 2.94059 23.7508 3.78378 23.7508H11.1701V15.5061H8.37767V12.2901H11.1701V9.92119C11.1701 8.5786 11.5414 7.53531 12.284 6.79413C13.0266 6.05154 14.0332 5.67884 15.3052 5.67884C16.5786 5.67884 17.4031 5.72825 17.78 5.82142V8.68448H16.0831C15.4703 8.68448 15.0525 8.81437 14.828 9.07413C14.6049 9.33248 14.4934 9.72213 14.4934 10.2402V12.2901H17.6741L17.2506 15.5061H14.4934V23.7508H20.0134C20.8567 23.7508 21.6653 23.4158 22.2615 22.8196C22.8578 22.2234 23.1927 21.4148 23.1927 20.5715V4.34189C23.1927 3.49869 22.8578 2.69003 22.2615 2.09379C21.6653 1.49756 20.8567 1.1626 20.0134 1.1626Z" fill="currentColor" ></path>
+          </svg> </a>
+        <a href="#" title="Product Hunt Profile" target="_blank" class="bg-slate-800 dark:bg-zinc-800 p-2 rounded-full">
+          <svg class="h-4 text-slate-50 dark:text-gray-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1.52136C6.21291 1.52136 1.52148 6.21279 1.52148 11.9999C1.52148 17.7871 6.21291 22.4785 12 22.4785C17.7872 22.4785 22.4786 17.7871 22.4786 11.9999C22.4786 6.21279 17.7872 1.52136 12 1.52136ZM13.3972 14.0957L10.4283 14.0957V17.2392H8.33257V6.76064L13.3973 6.76068V6.76064C15.4228 6.76064 17.0647 8.40267 17.0647 10.4282C17.0647 12.4537 15.4227 14.0957 13.3972 14.0957Z" fill="currentColor" ></path>
+            <path d="M13.3972 8.85645L10.4282 8.85649V12H13.3972V12C14.2652 12 14.9689 11.2963 14.9689 10.4282C14.9689 9.56015 14.2652 8.85645 13.3972 8.85645Z" fill="currentColor" ></path>
+          </svg> </a>
+        <a href="#" title="Website address" target="_blank" class="bg-slate-800 dark:bg-zinc-800 p-2 rounded-full">
+          <svg class="h-4 text-slate-50 dark:text-gray-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM3.36 12C3.36 11.04 3.52 10.12 3.84 9.24C4.76 9.44 5.76 9.64 6.76 9.76C6.68 10.48 6.64 11.24 6.64 12C6.64 13.04 6.72 14.04 6.88 15C5.76 14.84 4.68 14.6 3.72 14.32C3.44 13.56 3.36 12.8 3.36 12ZM7.92 12C7.92 11.28 7.96 10.56 8.04 9.88C9.12 10 10.2 10.04 11.32 10.08V15.4002C10.24 15.3602 9.2 15.2802 8.2 15.1602C8.04 14.2002 7.92 13.1202 7.92 12.0002V12ZM12.6798 3.47977C14.0398 3.99977 15.1998 5.99977 15.7598 8.64C14.7598 8.72 13.7198 8.76 12.6798 8.76V3.47977ZM11.3598 3.47977V8.75977C10.3198 8.71977 9.27977 8.67977 8.27977 8.59977C8.83977 5.95977 9.99977 3.95977 11.3598 3.47977ZM11.3598 16.7195V20.5195C10.1998 20.0795 9.19977 18.5995 8.59977 16.5195C9.47977 16.6395 10.3998 16.7195 11.3598 16.7195ZM12.6798 20.5195V16.7595H12.9998C13.7998 16.7595 14.5998 16.7195 15.3998 16.6795C14.7998 18.6795 13.7998 20.1195 12.6798 20.5195ZM12.9998 15.4398H12.6798V10.1195C13.7998 10.1195 14.8798 10.0795 15.9598 9.95954C16.0398 10.5995 16.0798 11.2795 16.0798 11.9995C16.0798 13.1595 15.9598 14.3195 15.7598 15.3595C14.8398 15.3995 13.9198 15.4395 12.9998 15.4395V15.4398ZM17.2798 9.83977C18.3198 9.71977 19.3198 9.55977 20.2398 9.35977C20.5198 10.1998 20.6398 11.0798 20.6398 11.9998C20.6398 12.9998 20.4798 13.9198 20.1598 14.7998C19.1998 14.9998 18.1598 15.1198 17.0798 15.2398C17.2798 14.2398 17.3598 13.1598 17.3598 11.9998C17.3998 11.2398 17.3598 10.5198 17.2798 9.83977ZM19.7198 8.11977C18.8798 8.27977 17.9998 8.39977 17.0398 8.51977C16.6798 6.67977 16.0398 5.11977 15.1998 3.95977C17.1998 4.75977 18.7998 6.23977 19.7198 8.11977ZM8.75977 3.95977C7.95977 5.07977 7.31977 6.59977 6.95977 8.43977C6.03977 8.31977 5.15977 8.15977 4.35977 7.99977C5.27977 6.15977 6.83977 4.75977 8.75977 3.95977ZM4.23977 15.84C5.15977 16.04 6.11977 16.24 7.11977 16.36C7.47977 17.8 8.03977 19.08 8.75977 20C6.79977 19.24 5.19977 17.72 4.23977 15.84ZM15.2395 20.04C15.8795 19.16 16.4395 17.96 16.7995 16.6C17.7195 16.52 18.6395 16.4 19.5195 16.28C18.5595 17.96 17.0795 19.28 15.2395 20.04Z" fill="currentColor" ></path>
+          </svg> </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</body>
+
+</html>
